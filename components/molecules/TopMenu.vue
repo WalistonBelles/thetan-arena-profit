@@ -1,8 +1,6 @@
 <template>
   <v-card class="mx-auto overflow-hidden">
-    <v-app-bar
-      color="deep-purple"
-    >
+    <v-app-bar>
       <v-toolbar-title class="menu-logo">
         <Logo width_logo="200px"/>
       </v-toolbar-title>

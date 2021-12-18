@@ -1,3 +1,23 @@
+:root {
+  --heading-color: #ffffff;
+  --para-color: #dedee2;
+  --main-color: #05c3de;
+  --second-main-color: #2196F3;
+  --bg-main-color: #171744;
+  --bg-second-color: #1c1d55;
+  --bg-third-color: #202066;
+}
+
+#app {
+  background-color: var(--bg-main-color);
+  color: var( --heading-color);
+}
+
+.v-sheet.v-app-bar.v-toolbar:not(.v-sheet--outlined) {
+  background-image: -webkit-linear-gradient( 
+    0deg, rgb(93,93,249) 0%, rgb(49,35,102) 100%);
+}
+
 .container-title {
   font-weight: bold;
 }
@@ -11,14 +31,21 @@
   height: 12rem;
 }
 
-.text-blue-300 {
-  --tw-text-opacity: 1;
-  color: rgba(147, 197, 253, var(--tw-text-opacity));
+.text-blue {
+  color: var(--main-color);
 }
 
 .text-yellow-400 {
   --tw-text-opacity: 1;
   color: rgba(251, 191, 36, var(--tw-text-opacity));
+}
+
+.bg-gray-800 {
+  background-color: #6A1B9A;
+}
+
+.bg-gray-600 {
+  background-color: #8E24AA;
 }
 
 .text-2xl {
@@ -34,4 +61,42 @@
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.nft-info {
+  margin-top: 2rem !important;
+  padding-top: 2rem !important;
+  background-color: var(--bg-third-color);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.nft-info-name {
+  padding-left: 2rem;
+}
+
+.hero-details {
+  display: grid;
+}
+
+.profit-details {
+  display: grid;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.border-purple {
+  border: 1px solid #130933 !important;
+  color: #fff;
+}
+
+.theme--light.v-label {
+  color: var(--second-main-color) !important;
 }
