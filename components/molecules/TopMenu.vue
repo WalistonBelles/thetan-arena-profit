@@ -2,7 +2,7 @@
   <v-card class="mx-auto overflow-hidden">
     <v-app-bar>
       <v-toolbar-title class="menu-logo">
-        <Logo width_logo="200px"/>
+        <Logo width_logo="200px" style="padding-top: 20px;"/>
       </v-toolbar-title>
     </v-app-bar>
   </v-card>
