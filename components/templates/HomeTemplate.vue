@@ -7,6 +7,8 @@
       <SearchNft/>
       
       <NftInfo/>
+
+      <Credits/>
     </div>
   </div>
 </template>
