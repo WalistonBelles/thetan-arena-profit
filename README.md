@@ -13,6 +13,8 @@
 
 
   <h2> 🍸 Demo </h2>
+  <a href="https://thetan-arena-profit.herokuapp.com/">Live Demo</a>
+  <br>
   <img src="./static/demo.gif">
 </div>
 
