@@ -3,27 +3,27 @@
     <tbody>
       <tr>
         <th class="border-purple border-2 p-2 bg-gray-800">Hero Rarity</th>
-        <td class="border-purple border-2 p-2 bg-gray-600 text-center" x-text="heroRarity">{{ getHeroRarity }}</td>
+        <td class="border-purple border-2 p-2 text-center">{{ getHeroRarity }}</td>
         <th class="border-purple border-2 p-2 bg-gray-800">Skin Rarity</th>
-        <td class="border-purple border-2 p-2 bg-gray-600 text-center" x-text="skinRarity">{{ getSkinRarity }}</td>
+        <td class="border-purple border-2 p-2 text-center">{{ getSkinRarity }}</td>
       </tr>
       <tr>
         <th class="border-purple border-2 p-2 bg-gray-800">Total gTHC Battles</th>
-        <td class="border-purple border-2 p-2 bg-gray-600 text-center" x-text="heroRarity">{{ $nft.heroRanking.totalBattleCapTHC }}</td>
+        <td class="border-purple border-2 p-2 text-center">{{ $nft.heroRanking.totalBattleCapTHC }}</td>
         <th class="border-purple border-2 p-2 bg-gray-800">Max Battles per day</th>
-        <td class="border-purple border-2 p-2 bg-gray-600 text-center" x-text="skinRarity"> {{ getBattleDaily }} </td>
+        <td class="border-purple border-2 p-2 text-center"> {{ getBattleDaily }} </td>
       </tr>
       <tr>
         <th class="border-purple border-2 p-2 bg-gray-800">Used gTHC Battles</th>
-        <td class="border-purple border-2 p-2 bg-gray-600 text-center" x-text="heroRarity"> {{ $nft.heroRanking.battleCapTHC }} </td>
+        <td class="border-purple border-2 p-2 text-center"> {{ $nft.heroRanking.battleCapTHC }} </td>
         <th class="border-purple border-2 p-2 bg-gray-800">Days to finish Battles</th>
-        <td class="border-purple border-2 p-2 bg-gray-600 text-center" x-text="skinRarity"> {{ Math.round(($nft.heroRanking.totalBattleCapTHC - $nft.heroRanking.battleCapTHC) / getBattleDaily)}} days</td>
+        <td class="border-purple border-2 p-2 text-center"> {{ Math.round(($nft.heroRanking.totalBattleCapTHC - $nft.heroRanking.battleCapTHC) / getBattleDaily)}} days</td>
       </tr>
       <tr>
         <th class="border-purple border-2 p-2 bg-gray-800">Remaining gTHC Battles</th>
-        <td class="border-purple border-2 p-2 bg-gray-600 text-center" x-text="heroRarity"> {{ $nft.heroRanking.totalBattleCapTHC - $nft.heroRanking.battleCapTHC }} </td>
+        <td class="border-purple border-2 p-2 text-center"> {{ $nft.heroRanking.totalBattleCapTHC - $nft.heroRanking.battleCapTHC }} </td>
         <th class="border-purple border-2 p-2 bg-gray-800">Reward per Win</th>
-        <td class="border-purple border-2 p-2 bg-gray-600 text-center" x-text="skinRarity"> {{ getRewardPerWin }} gTHC</td>
+        <td class="border-purple border-2 p-2 text-center"> {{ getRewardPerWin }} gTHC</td>
       </tr>
     </tbody>
   </table>

@@ -40,7 +40,6 @@ export default Vue.extend({
       await this.$axios.$get('https://data.thetanarena.com/thetan/v1/hero?id=' + this.input.split('item/')[1])
         .then(res => {
           nft.updateNft(res.data);
-          console.log(res.data);
         })
         .catch(err => {
           console.log(err);

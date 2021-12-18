@@ -13,6 +13,10 @@
   color: var( --heading-color);
 }
 
+.row {
+  margin: 0 !important;
+}
+
 .v-sheet.v-app-bar.v-toolbar:not(.v-sheet--outlined) {
   background-image: -webkit-linear-gradient( 
     0deg, rgb(93,93,249) 0%, rgb(49,35,102) 100%);
@@ -35,9 +39,27 @@
   color: var(--main-color);
 }
 
+.text-green {
+  color: rgba(52, 211, 153) !important;
+}
+
+.text-red {
+  color: rgba(248, 113, 113) !important;
+}
+
 .text-yellow-400 {
   --tw-text-opacity: 1;
   color: rgba(251, 191, 36, var(--tw-text-opacity));
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .bg-gray-800 {
@@ -46,6 +68,10 @@
 
 .bg-gray-600 {
   background-color: #8E24AA;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .text-2xl {
@@ -93,10 +119,18 @@
 }
 
 .border-purple {
-  border: 1px solid #130933 !important;
-  color: #fff;
+  border: 1px solid var(--heading-color) !important;
+  color: var(--heading-color);
 }
 
 .theme--light.v-label {
   color: var(--second-main-color) !important;
+}
+
+table {
+  border-spacing: 0px !important;
+}
+
+.v-application p {
+  margin-bottom: 0px !important;
 }
